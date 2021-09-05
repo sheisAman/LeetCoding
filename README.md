@@ -2,9 +2,11 @@
 
 
 ### Description
-I am an enthusiast for Problem Solving, and what could be a better headstart than LeetCode, I am in love with it!🙈 
+I am an enthusiast for Problem Solving, and what could be a better headstart than LeetCode,
 
-I love it because:-
+I am in love with it!🙈 
+
+because:-
 
 Consistency - Since it encourages me to show up everyday
 
