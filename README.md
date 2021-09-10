@@ -24,4 +24,5 @@ Happy learning!
 * Reverse LL - 7 sept
 * Single Number - 8 sept
 * Remove Duplicates - 8 sept
+* Binary Search - 9 sept
 
