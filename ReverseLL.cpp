@@ -13,7 +13,7 @@ public:
 
         ListNode *save = head->next;
         save->next = head;
-        save->next->next = NULL;
+        head->next = NULL;
         return small_ans;
     }
 };
