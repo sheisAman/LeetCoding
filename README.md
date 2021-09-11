@@ -25,4 +25,5 @@ Happy learning!
 * Single Number - 8 sept
 * Remove Duplicates - 8 sept
 * Binary Search - 9 sept
+* Divisor Game - 11 sept ( I missed 10th sept, pardon:")
 
