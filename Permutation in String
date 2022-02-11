@@ -1,0 +1,40 @@
+https://leetcode.com/problems/permutation-in-string/
+
+// will do it all m by myself. huh.
+// AND I DID IT YAYAYAYAYA!
+class Solution {
+public:
+    bool checkInclusion(string s1, string s2) {
+        if(s1.size() > s2.size()){
+            return false;
+        }
+        
+        int k = s1.size();
+        
+        vector<int> v1(26,0);
+        for(int i = 0; i < s1.size(); i++){
+            v1[s1[i] - 'a']++;
+        }
+        
+        vector<int> v2(26,0);
+        for(int i = 0; i < k; i++){
+            v2[s2[i] - 'a']++;
+        }
+        
+        if(v1 == v2){
+            return true;
+        }
+        
+        for(int i = k; i < s2.size(); i++){
+            v2[s2[i] - 'a']++;
+            v2[s2[i-k] - 'a']--;
+            
+            if(v1 == v2){
+                return true;
+            }
+        }
+        
+        return false;
+        
+    }
+};
