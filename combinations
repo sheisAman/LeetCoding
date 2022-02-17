@@ -1,6 +1,7 @@
 https://leetcode.com/problems/combinations/
 
-/* first wrong code *.
+/* first wrong code */
+/* Spend first 3 mins readng the qquestion carefully !*/
 class Solution {
 private:
     vector<vector<int>> ans;
