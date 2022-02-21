@@ -1,0 +1,51 @@
+// not satisfied, i should consider al the kinds of test cases before actually coding it. Like here. dry run your approach and then come to conclusion
+class Solution {
+public:
+    string removeKdigits(string num, int k) {
+        
+        if(k>=num.size()){
+            return "0";
+        }
+        if(k == 0){
+            return num;
+        }
+        stack<char> s;
+        s.push(num[0]);
+        
+        for(int i = 1; i < num.size(); i++){
+            
+           while(!s.empty() && s.top() > num[i] && k){
+               s.pop();
+               k--;
+           }
+           s.push(num[i]);
+            
+              // popping preceding zeroes
+            if(s.size() == 1 && num[i] == '0')
+                s.pop();
+            
+        }
+        string ans = "";
+      
+        /* while stack is not empty and we still need to remove k elements*/
+        while(!s.empty() && k){
+            s.pop();
+            k--;
+        }
+        
+        
+        while(!s.empty()){
+            ans = ans + s.top();
+            s.pop();
+        }
+        
+        reverse(ans.begin(), ans.end());
+        if(ans.length() == 0)
+            return "0";
+        
+      
+        return ans;
+        
+        
+    }
+};
